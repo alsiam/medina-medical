@@ -1,0 +1,9 @@
+.service-card{
+    margin: 10px;
+    background-color: lightgray;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.service-card img{
+    border-radius: 5px;
+}
