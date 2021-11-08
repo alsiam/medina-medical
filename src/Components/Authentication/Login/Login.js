@@ -1,6 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
@@ -29,12 +28,12 @@ const Login = () => {
     }
 
     // form submit here 
-    const handleSubmit = () => {
+    const handleSubmit = event => {
         signInWithInput(email, password)
             .then(result => {
                 setUser(result.user)
-                histroy.push(redirectUrl);
                 setError('');
+                histroy.push(redirectUrl);
             })
             .catch(error => setError(error.message))
     }

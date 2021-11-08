@@ -10,4 +10,4 @@ MEDINA MEDICAL is frontend web application using react js.
 - we added authntication system in our website that our users can login.
 
 ## Live Site 
-https://the-health-care.netlify.app/
+https://the-health-care-website.web.app/
